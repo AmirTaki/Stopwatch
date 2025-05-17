@@ -15,3 +15,14 @@ body{
     min-height: 100vh;
     flex-direction: column;
 }
+
+.stopwatch {
+    background-color: rgba(0, 0, 0, .9);
+    padding: 20px 24px;
+    border-radius: 10px;
+}
+
+.timerDisplay {
+    font-size: 50px;
+    font-weight: 600;
+}
