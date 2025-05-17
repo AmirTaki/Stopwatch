@@ -27,8 +27,6 @@ const startTimer = ()=> {
     
     let hourStr = hour < 10 ? `0${hour}` : hour;
 
-    console.log(hourStr, minsStr, secsStr )
-
     timerDisplay.innerHTML = `${hourStr} : ${minsStr} : ${secsStr}`
 }
 
@@ -42,27 +40,9 @@ stopBtn.addEventListener("click", (e) => {
    clearInterval(timerId)
 })
 
-
-// start
-// startBtn.addEventListener('click', (e)=>{
-
-//     clearInterval = () =>
-
-//     if (timerId !== null){
-//            clearInterval(timerId)
-//     }   
-//     timerId  = setInterval(startTimer, 10)
-// })
-// // stop
-// stopBtn.addEventListener('click', (e)=>{
-//     clearInterval(timerId)   
-// })
-
-// // reset
-// resetBtn.addEventListener('click', (e)=>{
-//     clearInterval(timerId)  
-//     timerDisplay.innerHTML = "00 : 00 : 00" 
-//     msec = secs = mins = 0
-// })
-
-
+// reset 
+resetBtn.addEventListener('click', (e) =>{
+    clearInterval(timerId)
+    timerDisplay.innerHTML = "00 : 00 : 00"
+    hour = 0 , mins = 0 ,secs = 0
+})
